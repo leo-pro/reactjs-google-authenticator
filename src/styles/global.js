@@ -13,10 +13,7 @@ export const useStyles = makeStyles((theme) => ({
     width: '96px',
     height: '96px'
   },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
   grid:{
-    marginTop: '0.rem'
+    marginTop: '3rem'
   }
 }));
