@@ -12,8 +12,8 @@ pontuar as motivações).
 2. Após realizar a autenticação a aplicação deverá direcionar para um
 página que exiba os dados do usuário logado, as informações das
 tecnologias utilizadas e link para o código fonte no github.
-3. Fazer deploy da aplicação em um serviço grátis.
-4. Criar um repositório para a aplicação e enviar o link.
+3. Fazer deploy da aplicação em um serviço grátis. [OK]
+4. Criar um repositório para a aplicação e enviar o link. [OK]
 
 ### Dinâmica de apresentação
 Segue detalhes:

@@ -8,6 +8,9 @@ export const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  profile:{
+    width: '100%'
+  },
   avatar: {
     margin: theme.spacing(2),
     backgroundColor: '#0A84FF',
@@ -16,5 +19,15 @@ export const useStyles = makeStyles((theme) => ({
   },
   grid:{
     marginTop: '0.rem'
+  },
+  p:{
+    display:'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'rgba(0,0,0,0.8)'
+  },
+  icon:{
+    marginRight: '0.3rem',
+    fontSize: '1rem'
   }
 }));
