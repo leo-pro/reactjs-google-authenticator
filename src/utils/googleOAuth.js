@@ -22,7 +22,7 @@ const googleAuth = async (code) => {
 
   const ticket = await client.verifyIdToken({
     idToken,
-    audience: process.env.GOOGLE_CLIENT_ID,
+    audience: process.env.REACT_APP_CLIENT_ID,
   });
 
   const payload = ticket.getPayload();
@@ -37,7 +37,7 @@ const googleAuth = async (code) => {
 };
 
 
-googleAuth('4/0AY0e-g5i0AGo_S5g7mNripIeZiiom_suviFFy3gSANvRl_iI7ZCpizQ1d8nLwNCOYWu-4w');
+//googleAuth('4/0AY0e-g5i0AGo_S5g7mNripIeZiiom_suviFFy3gSANvRl_iI7ZCpizQ1d8nLwNCOYWu-4w');
 
-//module.exports = googleAuth;
+module.exports = googleAuth;
 

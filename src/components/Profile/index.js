@@ -7,8 +7,7 @@ import {
   CssBaseline,
   Paper,
   Typography,
-  Avatar,
-  Button
+  Avatar
 } from '@material-ui/core';
 import MailOutline from '@material-ui/icons/MailOutline';
 

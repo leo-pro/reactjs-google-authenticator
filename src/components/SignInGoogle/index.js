@@ -1,5 +1,6 @@
 import React, { useState }from 'react';
 import GoogleLogin from 'react-google-login';
+require('dotenv/config');
 
 const {REACT_APP_CLIENT_ID} = process.env;
 
