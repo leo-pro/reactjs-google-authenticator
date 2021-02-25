@@ -49,7 +49,7 @@ function App() {
             </div>
             <Grid
               container
-              direction="row"
+              direction="column"
               justify="center"
               alignItems="center"
               className={styles.grid}

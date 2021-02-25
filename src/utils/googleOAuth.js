@@ -1,8 +1,12 @@
+require('dotenv').config();
+
+const {REACT_APP_CLIENT_ID, REACT_APP_TOKEN} = process.env;
+
 const { OAuth2Client } = require('google-auth-library');
 
 const client = new OAuth2Client(
-  '216542067141-blhunnpnmdpvt2rqqdejg75h01m1mb1f.apps.googleusercontent.com',
-  'TipB4Ui-UTzmqICbshmiTt9k',
+  REACT_APP_CLIENT_ID,
+  REACT_APP_TOKEN,
   /**
    * To get access_token and refresh_token in server side,
    * the data for redirect_uri should be postmessage.
@@ -33,7 +37,7 @@ const googleAuth = async (code) => {
 };
 
 
-//googleAuth('4/0AY0e-g5i0AGo_S5g7mNripIeZiiom_suviFFy3gSANvRl_iI7ZCpizQ1d8nLwNCOYWu-4w');
+googleAuth('4/0AY0e-g5i0AGo_S5g7mNripIeZiiom_suviFFy3gSANvRl_iI7ZCpizQ1d8nLwNCOYWu-4w');
 
-module.exports = googleAuth;
+//module.exports = googleAuth;
 

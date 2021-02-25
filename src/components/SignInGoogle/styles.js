@@ -6,6 +6,7 @@ export const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#F7F7F7',
     color: '#333333',
     padding: ' 0.8rem 2rem',

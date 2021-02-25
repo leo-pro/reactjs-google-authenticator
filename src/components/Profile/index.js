@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {GoogleLogout} from 'react-google-login';
+
 import { 
   Container,
   CssBaseline,
@@ -12,9 +14,12 @@ import MailOutline from '@material-ui/icons/MailOutline';
 
 import {useStyles} from './styles';
 
+const {REACT_APP_CLIENT_ID} = process.env;
+
 function Profile({user, logout}){
   const styles = useStyles();
   const {name, email, imageUrl} = user;
+
   return(
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -28,7 +33,13 @@ function Profile({user, logout}){
           <p style={{ display: 'flex'}}> 
             <MailOutline style={{ marginRight: '0.4rem'}}/> {email}
           </p>
-          <Button size="medium" onClick={logout} style={{fontWeight: 600, background: '#0A84FF', color:'#ffffff'}}>Sair</Button>
+          <GoogleLogout
+            clientId={REACT_APP_CLIENT_ID}
+            onClick={logout}
+          >
+            Sair  
+          </GoogleLogout>
+          {/* <Button size="medium" onClick={logout} style={{fontWeight: 600, background: '#0A84FF', color:'#ffffff'}}>Sair</Button> */}
         </div>
       </Paper>  
     </Container>
