@@ -1,31 +1,31 @@
-## DESAFIO TÉCNICO
-### Problema a ser resolvido
-O nosso cliente solicita que autenticação de uma determinada API seja
-realizada com segundo fator de autenticação usando Google Authenticator,
-veja aqui como funciona:
-https://www.youtube.com/watch?v=mVIxzH4EWmA
+<h2 align="center"> 💻 Google Authenticator - React </h2>
+<h4>Aplicação ReactJS com autenticação pelo Google </h4>
+<p>Essa aplicação foi construida com base na biblioteca ReactJS e na API de authenticação do Google, a Google OAuth. Na página de SignIn é possível se conectar com sua conta do Google e logo em seguida você será direcionado para esse dashboard com as informações do usuário, que são retornadas em um objeto JSON após a requisição na API do Google.
 
-### Requisitos desejáveis de Implementação:
-1. Utilizando Javascript, criar uma pequena aplicação que integre com o
-sistema de autenticação do Google (Se optar por um framework
-pontuar as motivações).
-2. Após realizar a autenticação a aplicação deverá direcionar para um
-página que exiba os dados do usuário logado, as informações das
-tecnologias utilizadas e link para o código fonte no github.
-3. Fazer deploy da aplicação em um serviço grátis. [OK]
-4. Criar um repositório para a aplicação e enviar o link. [OK]
+O ReactJS foi escolhido para construção desta aplicação para lidar com os Estados da aplicação(Hooks useState) no momento do Login e pela agilidade em construir componentes reutilizáveis por toda aplicação. Em conjunto com a pacote do framework Material UI, é possível utilizar componentes visuais completos em poucas linhas de código, ou até mesmo sobrescrever novos componentes baseados nas múltiplas opções disponíveis no framework, como Button, Layouts responsivos com Container/Grid e Navbars.</p>
 
-### Dinâmica de apresentação
-Segue detalhes:
-● Explicar como chegou na solução
-● Apresentar como o código funciona
+<p>🖥️ Demo: <a href="https://reactjs-google-authenticator.herokuapp.com/" target="_blank">Click here</a></p>
 
-### Color Palette
-```CSS
-  root:{
-    purple: #9400FF;
-    pink: #DF00A9;
-    green: #12BC00;
-    blue: #0A84FF;
-  }
+
+## Install and Run
+To install and run the application:
+
+* Clone repository and install dependencies: 
 ```
+  git clone https://github.com/leo-pro/reactjs-google-authenticator
+  cd reactjs-google-authenticator
+  yarn or npm install
+```
+* Running the project into your browser at http://localhost:3000
+```
+  yarn start or npm run start
+```
+
+## Techs
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+</p>
+
+##
+Made With ❤️ & ReactJS by [Leonardo Alves](https://github.com/leo-pro)
+
