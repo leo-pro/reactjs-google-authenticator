@@ -1,7 +1,5 @@
 import React from 'react';
 
-import {GoogleLogout} from 'react-google-login';
-
 import { 
   Container,
   CssBaseline,
@@ -10,13 +8,10 @@ import {
   Avatar,
   Button
 } from '@material-ui/core';
-import MailOutline from '@material-ui/icons/MailOutline';
 
 import ProjectInfo from '../ProjectInfo';
 
 import {useStyles} from './styles';
-
-const {REACT_APP_CLIENT_ID} = process.env;
 
 function Profile({user, logout}){
   const styles = useStyles();
@@ -36,12 +31,6 @@ function Profile({user, logout}){
             <p className={styles.p}> 
                {email}
             </p>
-            {/* <GoogleLogout
-              clientId={REACT_APP_CLIENT_ID}
-              onClick={logout}
-            >
-              Sair  
-            </GoogleLogout> */}
             <Button size="medium" onClick={logout} style={{fontWeight: 600, background: '#0A84FF', color:'#ffffff'}}>Sair</Button>
           </div>
         </Paper>  

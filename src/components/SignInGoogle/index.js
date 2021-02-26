@@ -36,7 +36,7 @@ function SignInGoogle(props) {
         textAlign: 'center'
       }}>
         <br/> 
-        {hasErrors && 'Não foi possível conectar a sua conta do Google'}
+        {hasErrors && 'Não foi possível conectar com a sua conta do Google'}
       </p>
     </>
   );
